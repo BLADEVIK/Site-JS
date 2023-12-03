@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<header class="header">
+   <div class="header__top center">
+    <h1 class="header__title title">Добро пожаловать <br> на мой сайт !</h1>
+    <p class="header__description description">Вам предстоит пройти несколько увлекательных  игр. Если готов нажимай <span class="description-span">поехали</span> и <span class="description-span">приступай</span></p>
+    <div class="container__btn">
+     <button class="header__btn btn" type="submit">Поехали!</button>
+    </div>
+   </div>
+   <div class="head__bottom center">
+    <div class="bottom__image image_game1">
+        <img class="image_fone" src="images/game1.png" alt="игра 1">
+    <p class="text text_game2">Игра 1</p>
+    </div>
+    
+    <div class="bottom__image image_game2">
+        <img class="image_fone" src="images/game2.png" alt="игра 2">
+    <p class="text text_game2">Игра 2</p>
+    </div>
+    
+    <div class="bottom__image image_game3">
+        <img class="image_fone" src="images/game3.png" alt="игра 3">
+    <p class="text text_game2">Игра 3</p>
+    </div>
+</div>
+</header>
+<body class="body">
+    
+    <div class="container__game center">
+        <div class="block__game">
+        <h1 class="game__title title">Времена года</h1>
+        <p class="game__description description">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="description-span">поехали</span> и <span class="description-span">приступай</span></p>
+        <div class="container__btn">
+         <button  class="game__btn-season btn" type="submit" onclick="monthNumber()" >Поехали!</button>
+        </div>
+       </div> 
+       <img class="image__game" src="images/game-1-fone.png" alt="">
+       </div> 
+
+
+       <div class="container__game save-word  center">
+        <div class="block__game">
+        <h1 class="game__title title">Запомни слова</h1>
+        <p class="block__description description">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+        <div class="container__btn">
+         <button class="game__btn-saveWord btn" type="submit" onclick="gameFruit()" >Играть</button>
+        </div>
+       </div> 
+       <img class="image__game" src="images/game-2-fone.png" alt="">
+       </div>
+
+       <div class="game__riddle center">
+        <div class="container__riddle">
+        <h1 class="game__riddle-title title">Игра в загадки</h1>
+        <p class="game__riddle-description description">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <div class="container__btn">
+            <button class="game__btn-riddle btn" type="submit">Играть</button>
+           </div>
+        </div>
+       </div>
+       <footer class="footer">
+           <p class="footer-text">Все права защищены</p>
+       </footer>
+       
+    
+    <script src="script.js"></script>
+</body>
+</html>

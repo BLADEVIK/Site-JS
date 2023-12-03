@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  *{ box-sizing: border-box;}
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  .header{
+    font-family: "Montserrat", sans-serif;
+  }
+   .header__top{
+    height: 1024px;
+    background-image:url(images/fone_top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+   .header__title{
+    padding-top: 217px;
+    margin-bottom: 32px;
+   }
+   .title{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 32px;
+   }
+   .description{
+    margin-bottom: 34px;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 32px;
+    width: 481px;
+   }
+   .description-span{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+   }
+   .game__description{
+    width: 502px;
+   }
+   .block__description{
+    width: 588px;
+   }
+   .btn{
+    box-sizing: border-box;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 234.063px;
+    height: 48.603px;
+    flex-shrink: 0;
+    transition: all .4s;
+   }
+   .btn:hover{
+    background: #EB443F;
+   }
+   .head__bottom{
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 31px;
+    height: 100%;
+    background: #000915;
+   }
+   .bottom__image{
+    position:relative;
+    width: 379px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    transition: all .3s;
+   }
+   .bottom__image:hover{
+    border-radius: 16px;
+    border: 3px solid #44D2FF;
+    background: linear-gradient(180deg, rgba(39, 1, 15, 0.00) 0%, #001944 100%), url(<path-to-image>), lightgray 50% / cover no-repeat;
+   }
+   
+   .text{
+    position: absolute;
+    left: 32px;
+    bottom: 32px;
+    color:white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+   }
+   
+   .container__game{
+    height: 800px;
+    background: #000915;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 127px;
+    padding-top: 243px;
+   }
+   .image__game{
+    width: 485px;
+    height: 333px;
+   }
+   
+   .save-word{
+    display: flex;
+    flex-direction: row-reverse;
+   }
+   
+   .game__riddle{
+    padding-top: 276px;
+    height: 800px;
+    background-image:url(images/game-3-fone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   }
+   .container__riddle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+   .game__riddle-description{
+    
+    text-align: center;
+    width: 100%;
+   }
+   .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background: #000915;
+   }
+   .footer-text{
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+   
+  
+    
+  
+
+   /* Адаптив под мобильное устройство */
+   @media(max-width:767px) {
+    .center{
+      padding-left: 14px;
+      padding-right: 14px;
+    }
+    .header__top{
+      display: flex;
+      flex-direction: column;
+      height: 735px;
+      width: 100%;
+      background-image: url(images/fone_top-mobile.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    .title{
+      text-align: center;
+      font-size: 32px;
+      padding-top: 238px;
+    }
+    .game__title{
+      padding-top: 0;
+    }
+    .description{
+      align-self: center;
+      text-align: center;
+      font-size: 14px;
+      line-height: 22px;
+      width: 343px;
+    }
+    .container__btn{
+      display: flex;
+      justify-content: center;
+    }
+
+    .bottom__image{
+      width: 343px;
+      height: 300px;
+     }
+     .image_fone{
+       width: 100%;
+       height: 100%;
+     }
+
+    .head__bottom{
+      height: 1221px;
+      display: flex;
+      justify-content: center;
+    }
+   .container__game{
+    gap: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: center;
+    align-content: center;
+    gap: 64px;
+   }
+   .image__game{
+    width: 344px;
+    height: 236px;
+   } 
+   .game__riddle{
+    padding-top: 0;
+   }
+   .game__riddle-title{
+    padding-top: 51px;
+   }
+   }
+   @media(min-width:320px) and (max-width:343px){
+    .bottom__image{
+     width: 343px;
+     height: 300px;
+    }
+    .image_fone{
+      width: 100%;
+      height: 100%;
+    }
+  }
+   
+   
+
+   
+
+
+
